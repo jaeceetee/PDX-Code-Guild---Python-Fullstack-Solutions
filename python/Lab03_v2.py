@@ -19,7 +19,7 @@ else:
 # Add + or -
 if num_grade == 100:        # 100 is +
     letter_grade += "+"
-elif num_grade < 60:        # ignore if mid range
+elif num_grade < 60:        # ignore if f
     pass
 elif num_grade % 10 > 7:    # 8 and 9  gets +
     letter_grade += "+"
