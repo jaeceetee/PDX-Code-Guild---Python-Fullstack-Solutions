@@ -7,3 +7,6 @@
 - [Lab 03 v2](/python/Lab03_v2.py)
 - [Lab 04](/python/Lab04.py)
 - [Lab 04 v2](/python/Lab04_v2.py)
+- [Lab 05](/python/Lab05.py)
+- [Lab 05 v2](/python/Lab05_v2.py)
+- [Lab 05 v3](/python/Lab05_v3.py)
