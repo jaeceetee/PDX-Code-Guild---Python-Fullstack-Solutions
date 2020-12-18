@@ -40,8 +40,8 @@ while play_again == True:
     print(random.choice(magic8_answers))
     
     # Ask user to play again
-    question = input("What is your question? or type NO to quit: ")
-    if question.lower() == "no":
+    question = input("What is your question? or type DONE to quit: ")
+    if question.lower() == "done":
         play_again = False
 
     
