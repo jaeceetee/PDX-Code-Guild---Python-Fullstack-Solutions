@@ -20,3 +20,6 @@
 - [Lab 08 v3](/python/Lab08_v3.py)
 - [Lab 08 v4](/python/Lab08_v4.py)
 - [Lab 08 v5](/python/Lab08_v5.py)
+- [Lab 09](/python/Lab09.py)
+- [Lab 09 v2](/python/Lab09_v2.py)
+- [Lab 09 v3](/python/Lab09_v3.py)
