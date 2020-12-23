@@ -13,7 +13,7 @@ while not num_lower_letters.isdigit():
     num_lower_letters = input("Enter number of lower case letters in your desired password: ")
 num_lower_letters = int(num_lower_letters)
 while not num_upper_letters.isdigit():
-    num_upper_letters = input("Enter number of upper case letters in your desired password: ")
+    num_upper_letters = input("Enter number of upper case letters in your desired password: ")     
 num_upper_letters = int(num_upper_letters)
 while not num_numbers.isdigit():
     num_numbers = input("Enter number of numbers in your desired password: ")
@@ -35,7 +35,7 @@ while len(password) < num_lower_letters + num_upper_letters + num_numbers + num_
 
 # Randomize the order
 #password_list = password.split('')
-password_list = list(password)
+password_list = list(password) 
 random.shuffle(password_list)
 password = ''.join(password_list)
 
