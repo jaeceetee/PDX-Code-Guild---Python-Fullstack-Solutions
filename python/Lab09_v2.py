@@ -23,7 +23,7 @@ for letter in string.ascii_lowercase:
 user_input = ""
 user_input_valid = False
 while user_input_valid == False:
-    user_input = input("What string would you like to encrypt in ROT 13? ").lower()
+    user_input = input(f"What string would you like to encrypt in ROT{N}? ").lower()
     for char in user_input:
         if char not in string.ascii_lowercase:
             break
