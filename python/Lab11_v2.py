@@ -13,10 +13,18 @@ coins = [
 print("Welcome to the Change Maker 5000 (tm)")
 
 # Ask user for dollar amount
-dollar_amount = input("Enter a dollar amount: ")
+dollar_amount = ""
+valid_entry = False
+while valid_entry == False:
+    dollar_amount = input("Enter a dollar amount: ")
+    try:
+        dollar_amount = float(dollar_amount)
+        valid_entry = True
+    except:
+        pass
 
 # Convert dollar amount to pennies
-dollar_amount = dollar_amount.replace(".", "")
+dollar_amount *= 100
 dollar_amount = int(dollar_amount)
 
 # Calculations
@@ -33,6 +41,4 @@ for change in change_list:
     result += str(change_list[change]) + " " + change
     if change != 'penny':
         result += ', '
-
-
 print(result)
