@@ -26,3 +26,7 @@
 - [Lab 11](/python/Lab11.py)
 - [Lab 11 v2](/python/Lab11_v2.py)
 - [Lab 12](/python/Lab12.py)
+- [Lab 13](/python/Lab13.py)
+- [Lab 13 v2](/python/Lab13_v2.py)
+- [Lab 13 v3](/python/Lab13_v3.py)
+- [Lab 13 v4](/python/Lab13_v4.py)
