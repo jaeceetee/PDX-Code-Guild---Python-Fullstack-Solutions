@@ -2,7 +2,7 @@
 
 # Ask user for numeric distance
 num_distance = input("What is the distance? ")
-num_distance = int(num_distance)
+num_distance = float(num_distance)
 
 # Ask user for unit
 acceptable_units = {
@@ -11,7 +11,8 @@ acceptable_units = {
     "m": 1,
     "km": 1000
 }
-user_unit = input("What are the units? (ft, mi, m, km) ")
+# user_unit = input("What are the units? (ft, mi, m, km) ")
+user_unit = ""
 while user_unit not in acceptable_units:
     user_unit = input("What are the units? (ft, mi, m, km) ")
 

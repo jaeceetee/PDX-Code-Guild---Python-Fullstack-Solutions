@@ -1,15 +1,24 @@
 # Lab 12 - Blackjack Advice
 
-import random
-
 # Set Values for cards
 cards = ["A", 2, 3, 4, 5, 6, 7, 8, 9, 10, "J", "Q", "K"]
 
-# Select 3 random cards
+# Ask user for cards
 picked_cards = []
 total_value = 0
 while len(picked_cards) < 3:
-    current_pick = random.choice(cards)
+    if len(picked_cards) == 0:
+        card_seq = "first"
+    elif len(picked_cards) == 1:
+        card_seq = "second"
+    else:
+        card_seq = "third"
+    current_pick = ""
+    while current_pick not in cards:
+        current_pick = input(f"What's your {card_seq} card? (2-10, A, J, Q, K) ").upper()
+        if current_pick.isdigit() == True:
+            current_pick = int(current_pick)
+    
     if current_pick == "A":
         total_value += 1
     elif current_pick == "J" or current_pick == "Q" or current_pick == "K":
@@ -18,21 +27,15 @@ while len(picked_cards) < 3:
         total_value += current_pick
     picked_cards.append(current_pick)
 
-# Display cards
-result = f"""What's your first card? {picked_cards[0]}
-What's your second card? {picked_cards[1]}
-What's your third card? {picked_cards[2]}
-"""
-
 # Generate advice
 if total_value < 17:
-    result += f"{total_value} Hit!"
+    result = f"{total_value} Hit!"
 elif total_value < 21:
-    result += f"{total_value} Stay!"
+    result = f"{total_value} Stay!"
 elif total_value == 21:
-    result += f"{total_value} Blackjack!"
+    result = f"{total_value} Blackjack!"
 else:
-    result += f"{total_value} Already Busted!"
+    result = f"{total_value} Already Busted!"
 
 
 print(result)
