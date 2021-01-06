@@ -1,5 +1,4 @@
 # Lab 14 - Number to Phrase - Handle numbers from 100-999
-import random 
 
 def get_roman(digit, ref_dict):
     if digit in ref_dict:
@@ -32,11 +31,11 @@ roman_hunds = {
 }
 
 # Get user number
-#user_num = ""
-#while len(user_num) > 3 or user_num.isdigit() == False:
-#    user_num = input("Enter a number from 0 - 999 for conversion: ")
-#user_num = int(user_num)
-user_num = random.randint(0, 999)
+user_num = ""
+while len(user_num) > 3 or user_num.isdigit() == False:
+    user_num = input("Enter a number from 0 - 999 for conversion: ")
+user_num = int(user_num)
+#user_num = random.randint(0, 999)
 
 # Separate digits
 hunds_digit = user_num // 100
@@ -54,5 +53,5 @@ result += get_roman(tens_digit, roman_tens)
 result += get_roman(ones_digit, roman_ones)
 
 # Print result
-print(user_num)
+
 print(result)
