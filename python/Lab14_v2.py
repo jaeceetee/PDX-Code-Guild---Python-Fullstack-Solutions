@@ -36,29 +36,47 @@ ones_phrase = {
     19: "nineteen"
 }
 
+
+def num_to_phrase(user_input):
+
+# Convert to phrase
+    hunds_digit = user_input // 100
+    tens_digit = user_input % 100 // 10
+    ones_digit = user_input % 10
+    result = ""
+
+        # Over 99
+    if hunds_digit > 0:
+        result = ones_phrase[hunds_digit] + " hundred "
+        if tens_digit == 0 and ones_digit == 0:
+            pass
+        else:
+            result += "and "
+
+        # Under 20
+    if tens_digit == 0 and ones_digit == 0:
+        pass
+    elif tens_digit < 2:
+        under_twenty = 0
+        if tens_digit == 1:
+            under_twenty += 10
+        under_twenty += ones_digit
+        result += ones_phrase[under_twenty]
+
+
+        # 20 or over
+    else:
+        result += tens_phrase[tens_digit]
+        if ones_digit != 0:
+            result += "-" + ones_phrase[ones_digit]
+
+    # Display result
+    return result
+
 # Ask user for number
 user_input = ""
 while user_input.isdigit() == False or len(user_input) > 3:
     user_input = input("Enter up to 3 digit number from 0 - 999: ")
 user_input = int(user_input)
 
-# Convert to phrase
-hunds_digit = user_input // 100
-tens_digit = user_input % 100 // 10
-ones_digit = user_input % 10
-result = ""
-
-    # Over 99
-if hunds_digit > 0:
-    result = ones_phrase[hunds_digit] + " hundred and "
-
-    # Under 20
-if tens_digit == 0 or tens_digit == 1:
-    result += ones_phrase[ones_digit]
-
-    # 20 or over
-else:
-    result += tens_phrase[tens_digit] + "-" + ones_phrase[ones_digit]
-
-# Display result
-print(result)
+print(num_to_phrase(user_input))
