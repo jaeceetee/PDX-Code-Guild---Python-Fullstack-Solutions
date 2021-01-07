@@ -17,10 +17,9 @@ book = get_book()
 
 # Modify string - remove unwanted characters
     # Strip header and footer
-index = book.find("Produced by Jose Menendez")
-book = book[index::]
-index = book.find("End of the Project Gutenberg EBook of A Christmas Carol, by Charles Dickens")
-book = book[:index:]
+start = book.find("Produced by Jose Menendez")
+end = book.find("End of the Project Gutenberg")
+book = book[start:end:]
 
 book = book.lower() # all lowercase
 

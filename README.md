@@ -34,3 +34,4 @@
 - [Lab 14 v2](/python/Lab14_v2.py)
 - [Lab 14 v3](/python/Lab14_v3.py)
 - [Lab 15](/python/Lab15.py)
+- [Lab 16](/python/Lab16.py)
