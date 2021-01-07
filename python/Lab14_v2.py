@@ -1,5 +1,5 @@
 # Lab 14 - Number to Phrase - Handle numbers from 100-999
-
+import random
 # create dictionaries for reference
 tens_phrase = {
     0: "",
