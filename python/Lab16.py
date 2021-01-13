@@ -101,6 +101,8 @@ num_char = len(book)
 # Calculate ARI
 ari = (4.71 * (num_char/num_words)) + (.5 * (num_words/num_sent)) - 21.43
 ari = round(ari)
+if ari > 14:
+    ari = 14
 
 # craft output
 print("-" * 56)
