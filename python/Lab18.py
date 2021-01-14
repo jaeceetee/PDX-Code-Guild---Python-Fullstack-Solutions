@@ -1,6 +1,6 @@
 # Lab 18 - ATM - Create a class that uses the given code
 
-class ATM():
+class ATM:
     def __init__(self):
         self.leger = 0
         self.interest = .001
@@ -24,6 +24,7 @@ class ATM():
 
     def calc_interest(self):
         interest_gain = self.leger * self.interest
+        self.leger += interest_gain
         return interest_gain
 
 
