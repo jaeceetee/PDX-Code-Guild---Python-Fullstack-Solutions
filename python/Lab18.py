@@ -10,21 +10,18 @@ class ATM:
     
     def deposit(self, amount):
         self.leger += amount
-        return self.leger
 
     def check_withdrawal(self, amount):
-        if self.leger > amount:
+        if self.leger >= amount:
             return True
         else:
             return False
 
     def withdraw(self, amount):
         self.leger -= amount
-        return amount
 
     def calc_interest(self):
         interest_gain = self.leger * self.interest
-        self.leger += interest_gain
         return interest_gain
 
 
