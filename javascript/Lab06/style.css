@@ -1,0 +1,12 @@
+#catPics {
+    
+
+    display: flex;
+    flex-direction: column;
+}
+
+#select {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}

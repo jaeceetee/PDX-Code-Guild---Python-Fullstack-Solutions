@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dunder Mifflin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <header>
+        <img class="logo" src="dunder-mifflin-logo.png" alt="Dunder Mifflin Logo">
+        <div class="navigation" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div id=hidden-nav hidden>
+            <button>About Us</button>
+            <button>Company</button>
+            <button>Order</button>
+            <button>Contact</button>
+            <button>Distrubutor Login</button>
+        </div>
+    </header>
+    <main>
+        <div class="youtube-container">
+            <iframe class="youtube-video"  src="https://www.youtube.com/embed/mfokPqeSNcw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="grid" id="three">
+            <div class="content"><h3>NEWS</h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sit sint error tenetur? Facilis sit temporibus similique obcaecati sapiente fugit illo assumenda. Explicabo, accusantium distinctio!</div>
+            <div class="content"><h3>Better Future</h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, natus quae. Quos magnam odio architecto alias nemo excepturi laudantium eveniet quibusdam inventore. Aspernatur, iusto soluta!</div>
+            <div class="content"><img src="boss.gif" frameborder="0" width=auto></img></div>
+        </div>
+        
+        <div class="grid" id="four">
+            <img class="prof-image" src="prank.jpg" alt="Jim as Dwight">
+            <h3 class="prof-text">Professional Working Environment</h3>
+            <img class="vend-image" src="vending.gif" alt="Smashing Vending Machine">
+            <h3 class="vend-text">Exceptional Meals Provided for Purchase</h3>
+        </div>
+        </main>
+    <footer>
+
+    </footer>
+    <script>
+    function myFunction(x) {
+        x.classList.toggle("change");
+        var x = document.getElementById("hidden-nav");
+        
+        if (x.style.display === "flex") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "flex";
+        }
+    
+    }
+    </script>
+</body>
+</html>
